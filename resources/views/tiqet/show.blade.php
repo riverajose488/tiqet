@@ -25,6 +25,10 @@
 <button>Eliminar</button>
 </form>
 
-<a href="http://tiqet.com/tiqet//edit">Editar</a>
+<a href="{{route('tiqet.edit',$tiqet->id)}}">Editar</a>
 
 
+<form method="POST" action="{{route('tiqet.edit',$tiqet->id)}}">
+
+<button>Editar</button>
+</form>
